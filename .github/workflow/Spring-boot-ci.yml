@@ -1,0 +1,48 @@
+name: Spring-boot-application-build-push
+
+on:
+  push
+
+job:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: JDK Setup
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: build and test (MAVEN)
+        working-directory: .
+        run: mvn -B clean verify
+
+      - name: upload test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: .
+
+  docker-build-push:
+    runs: ubuntu-latest
+    needs: build-test
+
+    steps:
+      - name: Checkout Code
+        run: echo "need to work on"
+
+      - name: JDK Setup
+        run: echo "need to work on"
+
+      - name: build jar for docker
+        run: echo "need to work on"
+
+      - name: login to docker hub
+        run: echo "need to work on"
+
+      - name: build and push docker image
+        run: echo "need to work on"

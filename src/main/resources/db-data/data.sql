@@ -1,0 +1,172 @@
+-----------------------------------------------------
+-- TODO CATEGORY
+-----------------------------------------------------
+
+INSERT INTO TODO_CATEGORY (CATEGORY_NAME)
+VALUES ('Home');
+
+INSERT INTO TODO_CATEGORY (CATEGORY_NAME)
+VALUES ('Office');
+
+INSERT INTO TODO_CATEGORY (CATEGORY_NAME)
+VALUES ('School');
+
+INSERT INTO TODO_CATEGORY (CATEGORY_NAME)
+VALUES ('Shopping');
+
+INSERT INTO TODO_CATEGORY (CATEGORY_NAME)
+VALUES ('Health');
+
+-----------------------------------------------------
+-- TODO DATA
+-----------------------------------------------------
+
+INSERT INTO TODOS
+(
+    TODO_NAME,
+    TODO_DESCRIPTION,
+    TODO_STATUS,
+    TODO_PRIORITY,
+    TODO_TYPE,
+    DUE_DATE,
+    CREATION_DATE,
+    LAST_UPDATED_DATE,
+    CATEGORY_ID
+)
+VALUES
+(
+    'Complete Spring Boot Assignment',
+    'Develop REST APIs using Spring Boot',
+    'PENDING',
+    'HIGH',
+    'WORK',
+    DATE '2026-07-15',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    2
+);
+
+INSERT INTO TODOS
+(
+    TODO_NAME,
+    TODO_DESCRIPTION,
+    TODO_STATUS,
+    TODO_PRIORITY,
+    TODO_TYPE,
+    DUE_DATE,
+    CREATION_DATE,
+    LAST_UPDATED_DATE,
+    CATEGORY_ID
+)
+VALUES
+(
+    'Buy Groceries',
+    'Milk, Bread, Fruits and Vegetables',
+    'PENDING',
+    'MEDIUM',
+    'PERSONAL',
+    DATE '2026-07-10',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    4
+);
+
+INSERT INTO TODOS
+(
+    TODO_NAME,
+    TODO_DESCRIPTION,
+    TODO_STATUS,
+    TODO_PRIORITY,
+    TODO_TYPE,
+    DUE_DATE,
+    CREATION_DATE,
+    LAST_UPDATED_DATE,
+    CATEGORY_ID
+)
+VALUES
+(
+    'Morning Workout',
+    '45 Minutes Cardio',
+    'COMPLETED',
+    'HIGH',
+    'PERSONAL',
+    DATE '2026-07-08',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    5
+);
+
+INSERT INTO TODOS
+(
+    TODO_NAME,
+    TODO_DESCRIPTION,
+    TODO_STATUS,
+    TODO_PRIORITY,
+    TODO_TYPE,
+    DUE_DATE,
+    CREATION_DATE,
+    LAST_UPDATED_DATE,
+    CATEGORY_ID
+)
+VALUES
+(
+    'Java Interview Preparation',
+    'Practice Spring Boot and Microservices',
+    'PENDING',
+    'HIGH',
+    'WORK',
+    DATE '2026-07-20',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    2
+);
+
+INSERT INTO TODOS
+(
+    TODO_NAME,
+    TODO_DESCRIPTION,
+    TODO_STATUS,
+    TODO_PRIORITY,
+    TODO_TYPE,
+    DUE_DATE,
+    CREATION_DATE,
+    LAST_UPDATED_DATE,
+    CATEGORY_ID
+)
+VALUES
+(
+    'Read Spring Security',
+    'Complete first five chapters',
+    'PENDING',
+    'LOW',
+    'OTHER',
+    DATE '2026-07-25',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    3
+);
+
+INSERT INTO TODOS
+(
+    TODO_NAME,
+    TODO_DESCRIPTION,
+    TODO_STATUS,
+    TODO_PRIORITY,
+    TODO_TYPE,
+    DUE_DATE,
+    CREATION_DATE,
+    LAST_UPDATED_DATE,
+    CATEGORY_ID
+)
+VALUES
+(
+    'Pay Electricity Bill',
+    'Pay online before due date',
+    'COMPLETED',
+    'MEDIUM',
+    'PERSONAL',
+    DATE '2026-07-09',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP,
+    1
+);
