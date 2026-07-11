@@ -7,7 +7,7 @@ on:
       - main
       - master
     paths:
-      - "todo-application-prectice/src/main"
+      - "src/main/**"
 
 env:
   IMAGE_NAME: todo-application-prectice
