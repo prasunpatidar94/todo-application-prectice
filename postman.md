@@ -264,3 +264,9 @@ Since you're building this as an interview project, I recommend also creating:
 * A **Swagger/OpenAPI** configuration so you can test the APIs directly from a browser using `/swagger-ui/index.html`.
 
 These additions make the project look much more polished and are commonly appreciated in interviews.
+
+
+# Docker commands
+``` text
+docker run -d --name todo-application-prectice -p 8080:8080 sunpatidar/spring-boot-app:latest
+```
