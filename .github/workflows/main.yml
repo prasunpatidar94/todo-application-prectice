@@ -3,7 +3,7 @@ name: Spring-boot-application-build-push
 on:
   push
 
-job:
+jobs:
   build-test:
     runs-on: ubuntu-latest
 
