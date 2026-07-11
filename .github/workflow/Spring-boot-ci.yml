@@ -17,6 +17,7 @@ job:
           distribution: 'temurin'
           java-version: '17'
 
+
       - name: build and test (MAVEN)
         working-directory: .
         run: mvn -B clean verify
